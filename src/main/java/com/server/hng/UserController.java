@@ -25,7 +25,7 @@ public class UserController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(Map.of(
-                      "slackName","Peacemaker"  ,
+                        "slackUsername","Peacemaker",
                         "backend","true",
                         "age","28",
                         "bio","Software Engineer"

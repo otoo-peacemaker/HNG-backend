@@ -50,7 +50,7 @@ Using the cmd
   * . specifies that the dockerfile is located at the root dir
 * Check your docker image with this cmd
     `docker images`
-#### Run a Dockerfile image in a docker container
+#### Run a Dockerfile image in a docker container:publish it on port 8080
 `run -p 8081:8080 hng`
 
 -p stands for port

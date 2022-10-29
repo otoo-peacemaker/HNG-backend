@@ -12,9 +12,7 @@ public class UserController {
 
     //DATABASE
     private static final List<User> USERS = List.of(
-            new User("Peacemaker", true, 28, "I am Software Engineer"),
-            new User("Kwesi", true, 28, "I am Software Engineer"),
-            new User("Agnes", true, 28, "I am Software Engineer")
+            new User("Peacemaker", true, 28, "I am Software Engineer")
     );
 
     @GetMapping()

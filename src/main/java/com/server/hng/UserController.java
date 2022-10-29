@@ -4,6 +4,7 @@ package com.server.hng;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -11,7 +12,7 @@ import java.util.List;
 public class UserController {
 
     //DATABASE
-    private static final List<User> USERS = List.of(
+    private static final List<User> USERS = Arrays.asList(
             new User("Peacemaker", true, 28, "I am Software Engineer")
     );
 

@@ -20,7 +20,7 @@ public class UserController {
             new User("Peacemaker", true, 28, "I am Software Engineer")
     );
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+   /* @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> getUsers() {
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -30,12 +30,11 @@ public class UserController {
                         "age","28",
                         "bio","Software Engineer"
                 ));
-    }
-/*
+    }*/
     @GetMapping()
     public static List<User> getUser() {
         return USERS;
-    }*/
+    }
 
     @GetMapping(path = "{slackUserName}")
     public User getUserBySlackName(@PathVariable("slackUserName") String slackUserName) {

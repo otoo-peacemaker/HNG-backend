@@ -1,0 +1,9 @@
+### Send request with dynamic variables in request's body
+POST localhost:8080/backend/gng/api/operation/calculate
+Content-Type: application/json
+
+{
+  "operation_type": "addition",
+  "x": "10",
+  "y": "30"
+}

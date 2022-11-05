@@ -1,4 +1,4 @@
-package com.server.hng;
+package com.server.hng.model;
 
 public class User {
     private String slackUsername;

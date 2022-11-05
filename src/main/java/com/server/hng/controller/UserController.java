@@ -1,17 +1,11 @@
-package com.server.hng;
+package com.server.hng.controller;
 
 
-import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
-import org.springframework.http.HttpStatus;
+import com.server.hng.model.User;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @RestController
@@ -24,18 +18,6 @@ public class UserController {
     ).toList();
 
 
-
-   /* @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Object> getUsers() {
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .body(Map.of(
-                        "slackUsername","Peacemaker",
-                        "backend","true",
-                        "age","28",
-                        "bio","Software Engineer"
-                ));
-    }*/
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public static List<User> getUser() {
         return USERS.stream().toList();
